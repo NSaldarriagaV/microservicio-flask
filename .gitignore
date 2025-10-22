@@ -1,0 +1,28 @@
+# Ignorar entorno virtual
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos del sistema
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.DS_Store
+
+# Archivos de entorno y dependencias locales
+.env
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.seed
+
+# Otros
+*.db
