@@ -24,7 +24,6 @@ Salida de ejemplo:
 Ruta:
 - `GET /numero/<int:n>`
 
----
 
 ##  Análisis: ¿cómo modificaría su diseño si este microservicio tuviera que comunicarse con otro servicio que almacena el historial de cálculos en una base de datos externa?
 
