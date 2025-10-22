@@ -30,9 +30,8 @@ Rutas:
 ```bash
 docker build -t microservicio-flask:1.0 .
 docker run --rm -p 8000:8000 microservicio-flask:1.0
+# Ejemplo: http://localhost:8000/calc/5
 ```
-
-Ejemplo: http://localhost:8000/calc/5
 
 ---
 
