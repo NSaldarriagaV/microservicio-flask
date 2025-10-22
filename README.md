@@ -12,7 +12,7 @@ python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
-# Visita: http://127.0.0.1:8000/calc/5
+# Visita: http://127.0.0.1:8000/numero/5
 ```
 
 Salida de ejemplo:
@@ -21,17 +21,8 @@ Salida de ejemplo:
 {"numero": 5, "factorial": 120, "etiqueta": "impar"}
 ```
 
-Rutas:
-- `GET /calc/<int:n>`
-- `GET /health`
-
-## Ejecutar con Docker
-
-```bash
-docker build -t microservicio-flask:1.0 .
-docker run --rm -p 8000:8000 microservicio-flask:1.0
-# Ejemplo: http://localhost:8000/calc/5
-```
+Ruta:
+- `GET /numero/<int:n>`
 
 ---
 

@@ -3,7 +3,7 @@ import math
 
 app = Flask(__name__)
 
-@app.route("/calc/<int:n>", methods=["GET"])
+@app.route("/numero/<int:n>", methods=["GET"])
 def calc(n: int):
     # Validaciones
     if n < 0:
@@ -18,11 +18,7 @@ def calc(n: int):
         return jsonify({"error": "No fue posible calcular el factorial.", "detalle": str(e)}), 500
 
     etiqueta = "par" if (n % 2 == 0) else "impar"
-    return jsonify({"Número": n, "Factorial": fact, "Etiqueta": etiqueta})
-
-@app.route("/health", methods=["GET"])
-def health():
-    return jsonify({"Estado": "ok"}), 200
+    return jsonify({"Numero": n, "Factorial": fact, "Etiqueta": etiqueta})
 
 if __name__ == "__main__":
     # Para desarrollo local
